@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/MLPracticalTest.dir/main.cpp.o CMakeFiles/MLPracticalTest.dir/ml.cpp.o CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o  -o MLPracticalTest -lpthread 
