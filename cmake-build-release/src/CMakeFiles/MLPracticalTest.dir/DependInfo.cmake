@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/deiv/dev/curro/MLPracticalTest/src/InputParser.cpp" "/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o"
-  "/home/deiv/dev/curro/MLPracticalTest/src/main.cpp" "/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/main.cpp.o"
-  "/home/deiv/dev/curro/MLPracticalTest/src/ml.cpp" "/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o"
+  "/home/david.suarez/src/ML/src/InputParser.cpp" "/home/david.suarez/src/ML/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o"
+  "/home/david.suarez/src/ML/src/main.cpp" "/home/david.suarez/src/ML/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/main.cpp.o"
+  "/home/david.suarez/src/ML/src/ml.cpp" "/home/david.suarez/src/ML/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

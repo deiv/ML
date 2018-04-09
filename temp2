@@ -1,0 +1,68 @@
+/*
+int find_ig_attr2(ml::datacontainer_t& data, size_t attr_col_idx, set<string> values) {
+
+
+    double attr_entropy = calculate_dataset_entropy(data, values, attr_col_idx);
+
+    if (attr_entropy == 0.0d) {
+        std::cout << "---" << endl;
+        std::cout << "attr_entropy == 0" << endl;
+        for (auto const& x : data)
+        {
+            std::cout << x.at(attr_col_idx)  // string (key)
+                      << std::endl ;
+        }
+        std::cout << "---" << endl;
+        return 0;
+    }
+    size_t col_number = data.at(0).size();
+    std::map<col_idx_t, std::vector<dataset_entropy>> cols_entropies;
+    std::vector<std::future<std::pair<col_idx_t, std::vector<dataset_entropy>>>> fut_vec;
+
+    for (size_t col_idx = 0; col_idx < col_number; col_idx++) {
+        if (col_idx == attr_col_idx) {
+            break;
+        }
+
+        fut_vec.push_back(
+                std::async(
+                        std::launch::async,
+                        calculate_dataset_entropy_2_col,
+                        std::ref(data),
+                        values,
+                        attr_col_idx,
+                        col_idx));
+    }
+
+    for (auto &future : fut_vec) {
+        cols_entropies.insert(future.get());
+    }
+
+    col_idx_t col_selected = -1;
+    double highest_ig = 0.0d;
+
+    for (auto &ig : cols_entropies) {
+
+        double col_entropy = 0.0d;
+
+        for (auto &de : ig.second) {
+            col_entropy += static_cast<double>(de.dataset.size()) / static_cast<double>(data.size()) * de.entropy;
+        }
+
+        double ig_col = attr_entropy - col_entropy;
+
+        if (ig_col > highest_ig) {
+            highest_ig = ig_col;
+            col_selected = ig.first;
+        }
+    }
+
+    std::cout << "---" << endl;
+    std::cout << highest_ig << endl;
+    std::cout << col_selected << endl;
+    std::cout << "---" << endl;
+
+    for (auto& ig : cols_entropies.at(col_selected)) {
+        find_ig_attr2(ig.dataset, attr_col_idx, values);
+    }
+}*/

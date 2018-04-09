@@ -8,21 +8,23 @@
 #include <string>
 #include <vector>
 
-namespace ml {
+#include "ml.h"
 
-typedef std::vector<std::vector<std::string>> datacontainer_t;
+namespace ml {
 
 class InputParser {
 public:
-    InputParser() {};
+    InputParser();
+    ~InputParser();
 
     void parse_csv(std::string csv_path);
-
-    /* XXX: typedef */
-    datacontainer_t& get_data() { return csv_data; }
+    datacontainer_t get_data() { return csv_data; }
+    std::vector<csv_field_t>* get_col_names() { return csv_col_names; }
 
 private:
+
     datacontainer_t csv_data;
+    std::vector<csv_field_t>* csv_col_names;
 };
 
 } /* namespace ml */

@@ -8,101 +8,97 @@
 		<Option virtualFolders="CMake Files\;CMake Files\src\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/deiv/dev/curro/MLPracticalTest/cmake-build-release"/>
+				<Option working_dir="/home/david.suarez/src/ML/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/deiv/dev/curro/MLPracticalTest/cmake-build-release"/>
+				<Option working_dir="/home/david.suarez/src/ML/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/deiv/dev/curro/MLPracticalTest/cmake-build-release"/>
+				<Option working_dir="/home/david.suarez/src/ML/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MLPracticalTest">
-				<Option output="/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/MLPracticalTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src"/>
+				<Option output="/home/david.suarez/src/ML/cmake-build-release/src/MLPracticalTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/david.suarez/src/ML/cmake-build-release/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/Makefile&quot;  VERBOSE=1 MLPracticalTest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/src/Makefile&quot;  VERBOSE=1 MLPracticalTest"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MLPracticalTest/fast">
-				<Option output="/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/MLPracticalTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src"/>
+				<Option output="/home/david.suarez/src/ML/cmake-build-release/src/MLPracticalTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/david.suarez/src/ML/cmake-build-release/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/Makefile&quot;  VERBOSE=1 MLPracticalTest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/src/Makefile&quot;  VERBOSE=1 MLPracticalTest/fast"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/home/david.suarez/src/ML/cmake-build-release/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/InputParser.cpp">
+		<Unit filename="/home/david.suarez/src/ML/src/InputParser.cpp">
 			<Option target="MLPracticalTest"/>
 		</Unit>
-		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/InputParser.h">
+		<Unit filename="/home/david.suarez/src/ML/src/InputParser.h">
 			<Option target="MLPracticalTest"/>
 		</Unit>
-		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/main.cpp">
+		<Unit filename="/home/david.suarez/src/ML/src/main.cpp">
 			<Option target="MLPracticalTest"/>
 		</Unit>
-		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/ml.cpp">
+		<Unit filename="/home/david.suarez/src/ML/src/ml.cpp">
 			<Option target="MLPracticalTest"/>
 		</Unit>
-		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/ml.h">
+		<Unit filename="/home/david.suarez/src/ML/src/ml.h">
 			<Option target="MLPracticalTest"/>
 		</Unit>
-		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/CMakeLists.txt">
+		<Unit filename="/home/david.suarez/src/ML/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/CMakeLists.txt">
+		<Unit filename="/home/david.suarez/src/ML/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
 	</Project>
