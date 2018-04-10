@@ -28,12 +28,14 @@ using std::ref;
 
 namespace ml {
 
-const char* FAILED_ATTR_NAME  = "Failure";
-const char* FAILED_ATTR_VALUE = "No input_data";
-const char* EMPTY_STRING      = "";
-const double ENTROPY_ZERO = 0.0;
+    const char* FAILED_ATTR_NAME  = "Failure";
+    const char* FAILED_ATTR_VALUE = "No input_data";
+    const char* EMPTY_STRING      = "";
+    const double ENTROPY_ZERO = 0.0;
 
-result_tree_t* create_tree_node(result_tree_t* parent_node, string attr_name, string attr_value)
+
+
+    result_tree_t* create_tree_node(result_tree_t* parent_node, string attr_name, string attr_value)
 {
     auto node = new result_tree_t();
 
@@ -64,12 +66,13 @@ result_tree_t* DecisionTree::create_decision_tree(col_idx_t out_attr_idx)
         return create_tree_node(nullptr, EMPTY_STRING, most_frequent_value);
     }
 
-    set<col_idx_t> empty_set;
+    //concurrent_set<col_idx_t> empty_set;
+    FlagContainer empty_set;
 
     return calculate_tree_node(input_data, out_attr_values, out_attr_idx, empty_set);
 }
 
-result_tree_t* DecisionTree::calculate_tree_node(datacontainer_t &data, set<csv_field_t> out_attr_values, col_idx_t out_attr_idx, set<col_idx_t>& ignored_cols)
+result_tree_t* DecisionTree::calculate_tree_node(datacontainer_t &data, set<csv_field_t> out_attr_values, col_idx_t out_attr_idx, FlagContainer& ignored_cols)
 {
 /*
      * Si no existen datos, devolvemos un nodo indicando el error.
@@ -101,7 +104,7 @@ result_tree_t* DecisionTree::calculate_tree_node(datacontainer_t &data, set<csv_
 /*
  * IG(Y% X) = H(Y) − H(Y% X)
  */
-result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t> values, col_idx_t attr_col_idx, set<col_idx_t>& ignored_cols, double out_attr_entropy)
+result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t> values, col_idx_t attr_col_idx, FlagContainer& ignored_cols, double out_attr_entropy)
 {
     size_t col_count = data->at(0)->size();
     map<col_idx_t, vector<dataset_entropy>> cols_entropies;
@@ -118,7 +121,7 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
         }
 
         /* ... ni con las columnas ya partidas. */
-        if (ignored_cols.count(col_idx) != 0) {
+        if (ignored_cols.get_flag(col_idx) != 0) {
             continue;
         }
 
@@ -166,20 +169,36 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
             set<col_idx_t> local_ignored_cols(ignored_cols);
             local_ignored_cols.insert(col_selected);
 
-            result_tree_t *nd = calculate_tree_node(ig.dataset, values, attr_col_idx, local_ignored_cols);
+    for (auto& ig : cols_entropies.at(col_selected)) {
+        /*concurrent_set<col_idx_t> local_ignored_cols;//(ignored_cols);
+        for (auto& col : ignored_cols.getSet()) {
+            local_ignored_cols.insert(col);
+        }*/
+        FlagContainer local_ignored_cols;
+
+        for (size_t idx = 0; idx < input_data->at(0)->size(); idx++) {
+            local_ignored_cols.set_flag(idx, ignored_cols.get_flag(idx));
+        }
+
+        local_ignored_cols.setFlagOn(col_selected);
 
             if (nd != nullptr) {
                 nd->attr_value = ig.value;
                 nd->root = node_tree;
                 node_tree->children.push_back(nd);
 
-            } else {
-                /*
-                 * caso especial: añadimos un nuevo nodo con la columna del atributo de salida.
-                 */
-                nd = create_tree_node(node_tree, input_col_names->at(attr_col_idx), ig.value);
-                node_tree->children.push_back(nd);
-                nd->children.push_back(create_tree_node(nd, input_col_names->at(attr_col_idx), ig.dataset->at(0)->at(attr_col_idx)));
+        /*
+     * Bloqueamos hasta obtener los resultados del calculo de entropias
+     */
+    bool working = true;
+    do {
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        std::future_status status;
+
+        for (auto& pair : calculate_tree_fut_map) {
+            status = pair.second.wait_for(std::chrono::nanoseconds(1));
+            if (status != std::future_status::ready) {
+                break;
             }
         }
     }

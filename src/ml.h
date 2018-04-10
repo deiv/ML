@@ -10,6 +10,8 @@
 #include <set>
 #include <map>
 
+#include "concurrent_set.h"
+
 namespace ml {
 
 /*
@@ -33,6 +35,7 @@ typedef struct result_tree_t {
     std::vector<result_tree_t*> children;
 } result_tree_t ;
 
+
 class DecisionTree {
 public:
     DecisionTree(ml::datacontainer_t data, std::vector<csv_field_t>* col_names)
@@ -43,8 +46,8 @@ public:
 
 private:
 
-    result_tree_t* calculate_tree_node(datacontainer_t &data, std::set<csv_field_t> out_attr_values, col_idx_t out_attr_idx, std::set<col_idx_t>& ignored_cols);
-    result_tree_t* calculate_ig(datacontainer_t &data, std::set<csv_field_t> values, col_idx_t attr_col_idx, std::set<col_idx_t>& ignored_cols, double out_attr_entropy);
+    result_tree_t* calculate_tree_node(datacontainer_t &data, std::set<csv_field_t> out_attr_values, col_idx_t out_attr_idx, FlagContainer& ignored_cols);
+    result_tree_t* calculate_ig(datacontainer_t &data, std::set<csv_field_t> values, col_idx_t attr_col_idx, FlagContainer& ignored_cols, double out_attr_entropy);
     std::map<csv_field_t, size_t> get_frequency_table(ml::datacontainer_t& data, std::set<csv_field_t> values, col_idx_t attr_col_idx);
     std::string get_most_frequent_value(datacontainer_t& data, std::set<csv_field_t> values, col_idx_t attr_col_idx);
     double calculate_dataset_entropy(ml::datacontainer_t& data, std::set<csv_field_t> values, col_idx_t attr_col_idx);

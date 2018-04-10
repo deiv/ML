@@ -90,7 +90,10 @@
 		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/InputParser.h">
 			<Option target="MLPracticalTest"/>
 		</Unit>
-		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/main.cpp">
+		<Unit filename="/home/david.suarez/src/ML/src/concurrent_set.h">
+			<Option target="MLPracticalTest"/>
+		</Unit>
+		<Unit filename="/home/david.suarez/src/ML/src/main.cpp">
 			<Option target="MLPracticalTest"/>
 		</Unit>
 		<Unit filename="/home/deiv/dev/curro/MLPracticalTest/src/ml.cpp">
