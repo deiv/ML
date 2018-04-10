@@ -15,9 +15,7 @@
 
 #include "ml.h"
 
-/*
- * Nombres de espacios lo mas limpios posibles ...
- */
+
 using std::string;
 using std::cout;
 using std::endl;
@@ -90,12 +88,8 @@ result_tree_t* DecisionTree::calculate_tree_node(datacontainer_t &data, set<csv_
      *             “predict this unique output”''
      */
     if (attr_entropy == ENTROPY_ZERO) {
-       /* auto node      = create_tree_node(nullptr, input_col_names->at(out_attr_idx), "predict this unique output");
-        auto leaf_node = create_tree_node(node, "" , data->at(0)->at(out_attr_idx));
-
-        node->children.push_back(leaf_node);*/
-
-        return create_tree_node(nullptr, "", "predict this unique output");
+        return nullptr;
+        //create_tree_node(nullptr, "", "predict this unique output");
     }
 
     /*
@@ -157,8 +151,9 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
      * caso 2: ''Don’t split a node if none of the attributes can create multiple nonempty children
      */
     if (highest_ig == 0.0 ) {
+        node_tree = nullptr;
+        //node_tree = create_tree_node(nullptr,input_col_names->at(attr_col_idx), "predict the majority output");
 
-        node_tree = create_tree_node(nullptr, "", "predict the majority output");
     } else {
 #ifndef NDEBUG
         cout << ">>> la columna con la ganancia mayor es: " << col_selected << ", ig=" << highest_ig << endl;
@@ -177,6 +172,14 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
                 nd->attr_value = ig.value;
                 nd->root = node_tree;
                 node_tree->children.push_back(nd);
+
+            } else {
+                /*
+                 * caso especial: añadimos un nuevo nodo con la columna del atributo de salida.
+                 */
+                nd = create_tree_node(node_tree, input_col_names->at(attr_col_idx), ig.value);
+                node_tree->children.push_back(nd);
+                nd->children.push_back(create_tree_node(nd, input_col_names->at(attr_col_idx), ig.dataset->at(0)->at(attr_col_idx)));
             }
         }
     }

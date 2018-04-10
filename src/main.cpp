@@ -50,13 +50,13 @@ struct program_args parse_arguments(int argc, char **argv)
 void print_result(ml::result_tree_t* result)
 {
     if (result->root == nullptr && result->children.empty()) {
-        cout << result->attr_value << endl;
+        cout << result->attr_value << result->attr_name << endl;
 
     } else {
         for (ml::result_tree_t *t : result->children) {
 
             /* hoja */
-            if (t->attr_name.empty()) {
+            if (t->children.empty()) {
                 ml::result_tree_t *r = t;
 
                 string line;

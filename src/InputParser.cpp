@@ -39,7 +39,6 @@ std::vector<csv_field_t>* cut_line_cols( const string& line)
 InputParser::InputParser()
 {
     csv_data = new std::vector<std::vector<csv_field_t>*>();
-    csv_col_names;// = new std::vector<csv_field_t>();
 };
 
 InputParser::~InputParser()

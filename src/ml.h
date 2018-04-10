@@ -28,8 +28,8 @@ struct dataset_entropy {
 
 typedef struct result_tree_t {
     result_tree_t* root;
-    csv_field_t attr_name;                       /* null == hoja */
-    csv_field_t attr_value;                      /* null == raiz */
+    csv_field_t attr_name;
+    csv_field_t attr_value;
     std::vector<result_tree_t*> children;
 } result_tree_t ;
 
@@ -50,7 +50,7 @@ private:
     double calculate_dataset_entropy(ml::datacontainer_t& data, std::set<csv_field_t> values, col_idx_t attr_col_idx);
     std::pair<col_idx_t, std::vector<dataset_entropy>> calculate_dataset_entropy_2_col(ml::datacontainer_t& data, std::set<csv_field_t> values, col_idx_t attr_col_idx,  col_idx_t col);
 
-    datacontainer_t input_data; /* XXX: pertenece a la clase ¿?¿? */
+    datacontainer_t input_data;
     std::vector<csv_field_t>* input_col_names;
 };
 
