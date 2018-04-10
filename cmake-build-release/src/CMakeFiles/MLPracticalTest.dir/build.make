@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/david.suarez/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/david.suarez/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /usr/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david.suarez/src/ML
+CMAKE_SOURCE_DIR = /home/deiv/dev/curro/MLPracticalTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david.suarez/src/ML/cmake-build-release
+CMAKE_BINARY_DIR = /home/deiv/dev/curro/MLPracticalTest/cmake-build-release
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/MLPracticalTest.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/MLPracticalTest.dir/flags.make
 
 src/CMakeFiles/MLPracticalTest.dir/main.cpp.o: src/CMakeFiles/MLPracticalTest.dir/flags.make
 src/CMakeFiles/MLPracticalTest.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david.suarez/src/ML/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/MLPracticalTest.dir/main.cpp.o"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLPracticalTest.dir/main.cpp.o -c /home/david.suarez/src/ML/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/MLPracticalTest.dir/main.cpp.o"
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLPracticalTest.dir/main.cpp.o -c /home/deiv/dev/curro/MLPracticalTest/src/main.cpp
 
 src/CMakeFiles/MLPracticalTest.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MLPracticalTest.dir/main.cpp.i"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david.suarez/src/ML/src/main.cpp > CMakeFiles/MLPracticalTest.dir/main.cpp.i
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deiv/dev/curro/MLPracticalTest/src/main.cpp > CMakeFiles/MLPracticalTest.dir/main.cpp.i
 
 src/CMakeFiles/MLPracticalTest.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MLPracticalTest.dir/main.cpp.s"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david.suarez/src/ML/src/main.cpp -o CMakeFiles/MLPracticalTest.dir/main.cpp.s
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deiv/dev/curro/MLPracticalTest/src/main.cpp -o CMakeFiles/MLPracticalTest.dir/main.cpp.s
 
 src/CMakeFiles/MLPracticalTest.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/MLPracticalTest.dir/main.cpp.o.provides.build: src/CMakeFiles/MLP
 
 src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o: src/CMakeFiles/MLPracticalTest.dir/flags.make
 src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o: ../src/ml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david.suarez/src/ML/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLPracticalTest.dir/ml.cpp.o -c /home/david.suarez/src/ML/src/ml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o"
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLPracticalTest.dir/ml.cpp.o -c /home/deiv/dev/curro/MLPracticalTest/src/ml.cpp
 
 src/CMakeFiles/MLPracticalTest.dir/ml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MLPracticalTest.dir/ml.cpp.i"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david.suarez/src/ML/src/ml.cpp > CMakeFiles/MLPracticalTest.dir/ml.cpp.i
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deiv/dev/curro/MLPracticalTest/src/ml.cpp > CMakeFiles/MLPracticalTest.dir/ml.cpp.i
 
 src/CMakeFiles/MLPracticalTest.dir/ml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MLPracticalTest.dir/ml.cpp.s"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david.suarez/src/ML/src/ml.cpp -o CMakeFiles/MLPracticalTest.dir/ml.cpp.s
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deiv/dev/curro/MLPracticalTest/src/ml.cpp -o CMakeFiles/MLPracticalTest.dir/ml.cpp.s
 
 src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o.requires:
 
@@ -107,16 +107,16 @@ src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o.provides.build: src/CMakeFiles/MLPra
 
 src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o: src/CMakeFiles/MLPracticalTest.dir/flags.make
 src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o: ../src/InputParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/david.suarez/src/ML/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o -c /home/david.suarez/src/ML/src/InputParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o"
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o -c /home/deiv/dev/curro/MLPracticalTest/src/InputParser.cpp
 
 src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MLPracticalTest.dir/InputParser.cpp.i"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/david.suarez/src/ML/src/InputParser.cpp > CMakeFiles/MLPracticalTest.dir/InputParser.cpp.i
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deiv/dev/curro/MLPracticalTest/src/InputParser.cpp > CMakeFiles/MLPracticalTest.dir/InputParser.cpp.i
 
 src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MLPracticalTest.dir/InputParser.cpp.s"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/david.suarez/src/ML/src/InputParser.cpp -o CMakeFiles/MLPracticalTest.dir/InputParser.cpp.s
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deiv/dev/curro/MLPracticalTest/src/InputParser.cpp -o CMakeFiles/MLPracticalTest.dir/InputParser.cpp.s
 
 src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o.requires:
 
@@ -138,17 +138,17 @@ MLPracticalTest_OBJECTS = \
 # External object files for target MLPracticalTest
 MLPracticalTest_EXTERNAL_OBJECTS =
 
-src/MLPracticalTest.exe: src/CMakeFiles/MLPracticalTest.dir/main.cpp.o
-src/MLPracticalTest.exe: src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o
-src/MLPracticalTest.exe: src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o
-src/MLPracticalTest.exe: src/CMakeFiles/MLPracticalTest.dir/build.make
-src/MLPracticalTest.exe: /usr/lib/libpthread.a
-src/MLPracticalTest.exe: src/CMakeFiles/MLPracticalTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/david.suarez/src/ML/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MLPracticalTest.exe"
-	cd /home/david.suarez/src/ML/cmake-build-release/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MLPracticalTest.dir/link.txt --verbose=$(VERBOSE)
+src/MLPracticalTest: src/CMakeFiles/MLPracticalTest.dir/main.cpp.o
+src/MLPracticalTest: src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o
+src/MLPracticalTest: src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o
+src/MLPracticalTest: src/CMakeFiles/MLPracticalTest.dir/build.make
+src/MLPracticalTest: /usr/lib/x86_64-linux-gnu/libpthread.so
+src/MLPracticalTest: src/CMakeFiles/MLPracticalTest.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deiv/dev/curro/MLPracticalTest/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MLPracticalTest"
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MLPracticalTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/CMakeFiles/MLPracticalTest.dir/build: src/MLPracticalTest.exe
+src/CMakeFiles/MLPracticalTest.dir/build: src/MLPracticalTest
 
 .PHONY : src/CMakeFiles/MLPracticalTest.dir/build
 
@@ -159,10 +159,10 @@ src/CMakeFiles/MLPracticalTest.dir/requires: src/CMakeFiles/MLPracticalTest.dir/
 .PHONY : src/CMakeFiles/MLPracticalTest.dir/requires
 
 src/CMakeFiles/MLPracticalTest.dir/clean:
-	cd /home/david.suarez/src/ML/cmake-build-release/src && $(CMAKE_COMMAND) -P CMakeFiles/MLPracticalTest.dir/cmake_clean.cmake
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src && $(CMAKE_COMMAND) -P CMakeFiles/MLPracticalTest.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/MLPracticalTest.dir/clean
 
 src/CMakeFiles/MLPracticalTest.dir/depend:
-	cd /home/david.suarez/src/ML/cmake-build-release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/david.suarez/src/ML /home/david.suarez/src/ML/src /home/david.suarez/src/ML/cmake-build-release /home/david.suarez/src/ML/cmake-build-release/src /home/david.suarez/src/ML/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/deiv/dev/curro/MLPracticalTest /home/deiv/dev/curro/MLPracticalTest/src /home/deiv/dev/curro/MLPracticalTest/cmake-build-release /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src /home/deiv/dev/curro/MLPracticalTest/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/MLPracticalTest.dir/depend
 

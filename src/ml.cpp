@@ -35,30 +35,6 @@ const char* FAILED_ATTR_VALUE = "No input_data";
 const char* EMPTY_STRING      = "";
 const double ENTROPY_ZERO = 0.0;
 
-    template <typename T, typename Compare = std::less<T>>
-    class concurrent_set
-    {
-    private:
-        set::set<T, Compare> set_;
-        std::mutex mutex_;
-
-    public:
-        typedef typename std::set<T, Compare>::iterator iterator;
-        // etc.
-
-        std::pair<iterator, bool>
-        insert(const T& val) {
-            std::unique_lock<std::mutex> lock(mutex_);
-            return set_.insert(val);
-        }
-
-        size_t size() const {
-            std::unique_lock<std::mutex> lock(mutex_);
-            return set_.size();
-        }
-        // same idea with other functions
-    };
-
 result_tree_t* create_tree_node(result_tree_t* parent_node, string attr_name, string attr_value)
 {
     auto node = new result_tree_t();
@@ -152,25 +128,8 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
             continue;
         }
 
-       cols_entropies_fut_vec.push_back(
-            std::async(
-                std::launch::async,
-                calculate_dataset_entropy_2_col,
-                this,
-                ref(data),
-                values,
-                attr_col_idx,
-                col_idx));
 
-       // cols_entropies.insert(calculate_dataset_entropy_2_col(data, values, attr_col_idx, col_idx));
-    }
-
-    /* XXX: activar hilos */
-    /*
-     * Bloqueamos hasta obtener los resultados del calculo de entropias
-     */
-    for (auto& future : cols_entropies_fut_vec) {
-        cols_entropies.insert(future.get());
+        cols_entropies.insert(calculate_dataset_entropy_2_col(data, values, attr_col_idx, col_idx));
     }
 
     col_idx_t col_selected = 0;
@@ -196,7 +155,6 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
      * caso 2: ''Don’t split a node if none of the attributes can create multiple nonempty children
      */
     if (highest_ig == 0.0 ) {
-        //return nullptr;
         return create_tree_node(nullptr, "", "predict the majority output");
     }
 
@@ -213,42 +171,14 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
         set<col_idx_t> local_ignored_cols(ignored_cols);
         local_ignored_cols.insert(col_selected);
 
-        calculate_tree_fut_map.insert(std::pair<csv_field_t, std::future<result_tree_t*>>(ig.value,
-                std::async(
-                        std::launch::async,
-                        calculate_tree_node,
-                        this,
-                        ref(ig.dataset),
-                        values,
-                        attr_col_idx,
-                        ref(local_ignored_cols))));
-
-       /* result_tree_t *nd = calculate_tree_node(ig.dataset, values, attr_col_idx, local_ignored_cols);
+        result_tree_t *nd = calculate_tree_node(ig.dataset, values, attr_col_idx, local_ignored_cols);
 
         if (nd != nullptr) {
             nd->attr_value = ig.value;
             nd->root = node_tree;
             node_tree->children.push_back(nd);
-        }*/
-    }
-
-        /*
-     * Bloqueamos hasta obtener los resultados del calculo de entropias
-     */
-    bool working = true;
-    do {
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-        std::future_status status;
-
-        for (auto& pair : calculate_tree_fut_map) {
-            status = pair.second.wait_for(std::chrono::nanoseconds(1));
-            if (status != std::future_status::ready) {
-                break;
-            }
-
-            working = false;
         }
-    } while (working);
+    }
 
     for (auto& pair : calculate_tree_fut_map) {
         result_tree_t* nd = pair.second.get();

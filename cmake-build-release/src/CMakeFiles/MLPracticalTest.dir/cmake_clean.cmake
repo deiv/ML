@@ -3,8 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MLPracticalTest.dir/ml.cpp.o"
   "CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o"
   "MLPracticalTest.pdb"
-  "MLPracticalTest.exe"
-  "libMLPracticalTest.dll.a"
+  "MLPracticalTest"
 )
 
 # Per-language clean rules from dependency scanning.
