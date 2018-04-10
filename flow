@@ -1,0 +1,12 @@
+
+
+while true
+
+if [no datos, no atributos entrada, entropia == 0]
+    -> solo 1 nodo hoja
+    break
+
+else
+    -> ig del resto de atributos                              |
+    -> partimos los datos a partir de la columna con mayor ig -
+

@@ -49,22 +49,27 @@ struct program_args parse_arguments(int argc, char **argv)
 
 void print_result(ml::result_tree_t* result)
 {
-    for (ml::result_tree_t* t : result->children) {
+    if (result->root == nullptr && result->children.empty()) {
+        cout << result->attr_value << endl;
 
-        /* hoja */
-        if (t->attr_name.empty()) {
-            ml::result_tree_t* r = t;
+    } else {
+        for (ml::result_tree_t *t : result->children) {
 
-            string line;
+            /* hoja */
+            if (t->attr_name.empty()) {
+                ml::result_tree_t *r = t;
 
-            while (r->root != nullptr) {
-                line.insert(0,  " & " + r->root->attr_name + " = " + r->attr_value);
-                r = r->root;
+                string line;
+
+                while (r->root != nullptr) {
+                    line.insert(0, " & " + r->root->attr_name + " = " + r->attr_value);
+                    r = r->root;
+                }
+                cout << line.replace(0, 3, "") << endl;
+
+            } else {
+                print_result(t);
             }
-            cout << line.replace(0, 3, "") << endl;
-
-        } else {
-            print_result(t);
         }
     }
 }

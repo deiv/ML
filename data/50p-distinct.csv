@@ -1,0 +1,15 @@
+outlook;temp;humidity;windy;playgolf
+Rainy;Hot;High;False;Yes
+Rainy;Hot;High;True;Yes
+Overcast;Hot;High;False;Yes
+Sunny;Mild;High;False;Yes
+Sunny;Cool;Normal;False;Yes
+Sunny;Cool;Normal;True;Yes
+Overcast;Cool;Normal;True;Yes
+Rainy;Mild;High;False;No
+Rainy;Cool;Normal;False;No
+Sunny;Mild;Normal;False;No
+Rainy;Mild;Normal;True;No
+Overcast;Mild;High;True;No
+Overcast;Hot;Normal;False;No
+Sunny;Mild;High;True;No
