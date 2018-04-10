@@ -111,7 +111,7 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
 {
     size_t col_count = data->at(0)->size();
     map<col_idx_t, vector<dataset_entropy>> cols_entropies;
-    vector<future<pair<col_idx_t, vector<dataset_entropy>>>> cols_entropies_fut_vec;
+    //vector<future<pair<col_idx_t, vector<dataset_entropy>>>> cols_entropies_fut_vec;
 
     /*
      * Lanzamos el calculo de las entropias de cada columna en paralelo
@@ -151,42 +151,33 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
         }
     }
 
+    result_tree_t* node_tree;
+
     /*
      * caso 2: ''Don’t split a node if none of the attributes can create multiple nonempty children
      */
     if (highest_ig == 0.0 ) {
-        return create_tree_node(nullptr, "", "predict the majority output");
-    }
 
+        node_tree = create_tree_node(nullptr, "", "predict the majority output");
+    } else {
 #ifndef NDEBUG
-    cout << ">>> la columna con la ganancia mayor es: " << col_selected << ", ig=" << highest_ig << endl;
+        cout << ">>> la columna con la ganancia mayor es: " << col_selected << ", ig=" << highest_ig << endl;
 #endif
 
-    auto node_tree = new result_tree_t();
-    node_tree->attr_name = input_col_names->at(col_selected);
+        node_tree = new result_tree_t();
+        node_tree->attr_name = input_col_names->at(col_selected);
 
-    map<csv_field_t, std::future<result_tree_t*>> calculate_tree_fut_map;
+        for (auto &ig : cols_entropies.at(col_selected)) {
+            set<col_idx_t> local_ignored_cols(ignored_cols);
+            local_ignored_cols.insert(col_selected);
 
-    for (auto& ig : cols_entropies.at(col_selected)) {
-        set<col_idx_t> local_ignored_cols(ignored_cols);
-        local_ignored_cols.insert(col_selected);
+            result_tree_t *nd = calculate_tree_node(ig.dataset, values, attr_col_idx, local_ignored_cols);
 
-        result_tree_t *nd = calculate_tree_node(ig.dataset, values, attr_col_idx, local_ignored_cols);
-
-        if (nd != nullptr) {
-            nd->attr_value = ig.value;
-            nd->root = node_tree;
-            node_tree->children.push_back(nd);
-        }
-    }
-
-    for (auto& pair : calculate_tree_fut_map) {
-        result_tree_t* nd = pair.second.get();
-
-        if (nd != nullptr) {
-            nd->attr_value = pair.first;
-            nd->root = node_tree;
-            node_tree->children.push_back(nd);
+            if (nd != nullptr) {
+                nd->attr_value = ig.value;
+                nd->root = node_tree;
+                node_tree->children.push_back(nd);
+            }
         }
     }
 

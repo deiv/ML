@@ -77,15 +77,10 @@ void print_result(ml::result_tree_t* result)
 void free_result(ml::result_tree_t* result)
 {
     for (ml::result_tree_t* t : result->children) {
-
-        /* hoja */
-        if (t->attr_name.empty()) {
-            delete t;
-
-        } else {
-            free_result(t);
-        }
+        free_result(t);
     }
+
+    delete result;
 }
 
 int main(int argc, char **argv)
