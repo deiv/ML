@@ -1,1 +1,1 @@
-/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/MLPracticalTest.dir/main.cpp.o CMakeFiles/MLPracticalTest.dir/ml.cpp.o CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o  -o MLPracticalTest -lpthread 
+C:/cygwin64/bin/g++.exe -O3 -DNDEBUG  -Wl,--enable-auto-import CMakeFiles/MLPracticalTest.dir/main.cpp.o CMakeFiles/MLPracticalTest.dir/ml.cpp.o CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o  -o MLPracticalTest.exe -Wl,--out-implib,libMLPracticalTest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 /usr/lib/libpthread.a 

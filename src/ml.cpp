@@ -33,7 +33,7 @@ namespace ml {
     const char* EMPTY_STRING      = "";
     const double ENTROPY_ZERO = 0.0;
 
-
+    std::thread::id main_thread_id;
 
     result_tree_t* create_tree_node(result_tree_t* parent_node, string attr_name, string attr_value)
 {
@@ -49,6 +49,8 @@ namespace ml {
 result_tree_t* DecisionTree::create_decision_tree(col_idx_t out_attr_idx)
 {
     set<csv_field_t> out_attr_values;
+
+    main_thread_id = std::this_thread::get_id();
 
     /*
      * Obtenemos los valores únicos para la columna indice.
@@ -108,7 +110,7 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
 {
     size_t col_count = data->at(0)->size();
     map<col_idx_t, vector<dataset_entropy>> cols_entropies;
-    //vector<future<pair<col_idx_t, vector<dataset_entropy>>>> cols_entropies_fut_vec;
+    vector<future<pair<col_idx_t, vector<dataset_entropy>>>> cols_entropies_fut_vec;
 
     /*
      * Lanzamos el calculo de las entropias de cada columna en paralelo
@@ -125,8 +127,24 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
             continue;
         }
 
+        cols_entropies_fut_vec.push_back(
+            std::async(
+                std::launch::async,
+                calculate_dataset_entropy_2_col,
+                this,
+                ref(data),
+                values,
+                attr_col_idx,
+                col_idx));
 
-        cols_entropies.insert(calculate_dataset_entropy_2_col(data, values, attr_col_idx, col_idx));
+        //cols_entropies.insert(calculate_dataset_entropy_2_col(data, values, attr_col_idx, col_idx));
+    }
+
+    /*
+     * Bloqueamos hasta obtener los resultados del calculo de entropias
+     */
+    for (auto& future : cols_entropies_fut_vec) {
+        cols_entropies.insert(future.get());
     }
 
     col_idx_t col_selected = 0;
@@ -149,6 +167,7 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
     }
 
     result_tree_t* node_tree;
+    map<csv_field_t, std::future<result_tree_t*>> calculate_tree_fut_map;
 
     /*
      * caso 2: ''Don’t split a node if none of the attributes can create multiple nonempty children
@@ -166,45 +185,79 @@ result_tree_t* DecisionTree::calculate_ig(datacontainer_t &data, set<csv_field_t
         node_tree->attr_name = input_col_names->at(col_selected);
 
         for (auto &ig : cols_entropies.at(col_selected)) {
-            set<col_idx_t> local_ignored_cols(ignored_cols);
-            local_ignored_cols.insert(col_selected);
+            /*concurrent_set<col_idx_t> local_ignored_cols;//(ignored_cols);
+            for (auto& col : ignored_cols.getSet()) {
+                local_ignored_cols.insert(col);
+            }*/
+            FlagContainer local_ignored_cols;
 
-    for (auto& ig : cols_entropies.at(col_selected)) {
-        /*concurrent_set<col_idx_t> local_ignored_cols;//(ignored_cols);
-        for (auto& col : ignored_cols.getSet()) {
-            local_ignored_cols.insert(col);
-        }*/
-        FlagContainer local_ignored_cols;
+            local_ignored_cols.setFlagOn(col_selected);
 
-        for (size_t idx = 0; idx < input_data->at(0)->size(); idx++) {
-            local_ignored_cols.set_flag(idx, ignored_cols.get_flag(idx));
+            for (size_t idx = 0; idx < input_data->at(0)->size(); idx++) {
+                local_ignored_cols.set_flag(idx, ignored_cols.get_flag(idx));
+            }
+
+            if ( std::this_thread::get_id() == main_thread_id) {
+                calculate_tree_fut_map.insert(std::pair<csv_field_t, std::future<result_tree_t *>>(ig.value,
+                                                                                                   std::async(
+                                                                                                           std::launch::async,
+                                                                                                           calculate_tree_node,
+                                                                                                           this,
+                                                                                                           ref(ig.dataset),
+                                                                                                           values,
+                                                                                                           attr_col_idx,
+                                                                                                           ref(local_ignored_cols))));
+            } else {
+                    result_tree_t *nd = calculate_tree_node(ig.dataset, values, attr_col_idx, local_ignored_cols);
+
+                if (nd != nullptr) {
+nd->attr_value = ig.value;
+nd->root = node_tree;
+node_tree->children.push_back(nd);
+}
+                }
+
         }
 
-        local_ignored_cols.setFlagOn(col_selected);
+        if ( std::this_thread::get_id() == main_thread_id) {
+            /*
+            * Bloqueamos hasta obtener los resultados del calculo de entropias
+            */
+            bool working = true;
+            do {
+                std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                std::future_status status;
 
-            if (nd != nullptr) {
-                nd->attr_value = ig.value;
-                nd->root = node_tree;
-                node_tree->children.push_back(nd);
+                for (auto &pair : calculate_tree_fut_map) {
+                    status = pair.second.wait_for(std::chrono::nanoseconds(1));
+                    if (status != std::future_status::ready) {
+                        continue;
+                    }
 
-        /*
-     * Bloqueamos hasta obtener los resultados del calculo de entropias
-     */
-    bool working = true;
-    do {
-        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-        std::future_status status;
+                    working = false;
+                    break;
+                }
+            } while (working);
 
-        for (auto& pair : calculate_tree_fut_map) {
-            status = pair.second.wait_for(std::chrono::nanoseconds(1));
-            if (status != std::future_status::ready) {
-                break;
+            for (auto &pair : calculate_tree_fut_map) {
+                try {
+                    cout << "el hilo es valido ? " << pair.second.valid() << endl;
+                result_tree_t *nd = pair.second.get();
+
+                if (nd != nullptr) {
+                    nd->attr_value = pair.first;
+                    nd->root = node_tree;
+                    node_tree->children.push_back(nd);
+                }}
+                catch (std::exception& e) {
+                    cout << "error esperando: "  << e.what() << endl;
+                }
             }
         }
     }
 
-    for (auto& pair : cols_entropies) {
-        for (auto& e : pair.second) {
+    for (auto &pair : cols_entropies) {
+        for (auto &e : pair.second) {
             delete e.dataset;
         }
     }

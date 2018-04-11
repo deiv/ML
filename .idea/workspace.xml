@@ -19,40 +19,71 @@
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeRCCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/MLPracticalTest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/MLPracticalTest.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/MLPracticalTest" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/MLPracticalTest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/MLPracticalTest.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/MLPracticalTest.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/MLPracticalTest.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/MLPracticalTest.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/MLPracticalTest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeRCCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.10.2/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/MLPracticalTest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/MLPracticalTest.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/MLPracticalTest" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/MLPracticalTest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/MLPracticalTest.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/MLPracticalTest.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/src/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/50p-distinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/50p-distinct.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/50p-same-1distinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/50p-same-1distinct.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/50p-same.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/50p-same.csv" afterDir="false" />
@@ -62,9 +93,12 @@
       <change beforePath="$PROJECT_DIR$/flow" beforeDir="false" afterPath="$PROJECT_DIR$/flow" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InputParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputParser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/concurrent_set.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/concurrent_set.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ml.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ml.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ml.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ml.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp2" beforeDir="false" afterPath="$PROJECT_DIR$/temp2" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -75,17 +109,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ml.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ml.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="236" column="19" selection-start-line="236" selection-start-column="12" selection-end-line="236" selection-end-column="19" />
+            <state relative-caret-position="417">
+              <caret line="249" column="34" lean-forward="true" selection-start-line="249" selection-start-column="34" selection-end-line="249" selection-end-column="34" />
               <folding>
                 <element signature="e#38#57#0" expanded="true" />
+                <element signature="e#5005#5106#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functional" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/functional">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="1716" selection-start-line="1716" selection-end-line="1716" />
             </state>
           </provider>
         </entry>
@@ -93,8 +137,8 @@
       <file leaf-file-name="thread" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../../lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/thread">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="119">
+              <caret line="292" selection-start-line="292" selection-end-line="292" />
             </state>
           </provider>
         </entry>
@@ -102,7 +146,7 @@
       <file leaf-file-name="InputParser.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InputParser.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="289">
               <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="19" />
               <folding>
                 <element signature="e#115#132#0" expanded="true" />
@@ -114,7 +158,7 @@
       <file leaf-file-name="ml.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ml.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="833">
               <caret line="49" column="109" selection-start-line="49" selection-start-column="109" selection-end-line="49" selection-end-column="109" />
               <folding>
                 <element signature="e#97#115#0" expanded="true" />
@@ -126,7 +170,7 @@
       <file leaf-file-name="concurrent_set.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/concurrent_set.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="748">
               <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
               <folding>
                 <element signature="e#132#150#0" expanded="true" />
@@ -139,10 +183,10 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+            <state relative-caret-position="697">
+              <caret line="124" column="56" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
               <folding>
-                <element signature="e#1#20#0" expanded="true" />
+                <element signature="e#1911#2064#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,6 +215,7 @@
       <find>d</find>
       <find>caso</find>
       <find>set</find>
+      <find>-</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -193,10 +238,10 @@
         <option value="$PROJECT_DIR$/data/50p-same.csv" />
         <option value="$PROJECT_DIR$/data/50p-same-1distinct.csv" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/InputParser.cpp" />
         <option value="$PROJECT_DIR$/src/ml.h" />
         <option value="$PROJECT_DIR$/src/concurrent_set.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/ml.cpp" />
       </list>
     </option>
@@ -218,28 +263,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="MLPracticalTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLPracticalTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLPracticalTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLPracticalTest" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLPracticalTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLPracticalTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,11 +327,12 @@
       <workItem from="1523207638140" duration="19507000" />
       <workItem from="1523262540488" duration="24289000" />
       <workItem from="1523344408331" duration="27162000" />
+      <workItem from="1523432346967" duration="7812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83035000" />
+    <option name="totallyTimeSpent" value="90847000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -308,20 +344,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1448" height="871" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66456693" visible="true" weight="0.20918728" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66456693" weight="0.20907739" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32913387" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49926794" weight="0.32843137" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49926794" weight="0.5392157" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.34564644" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.7760989" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.50816995" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
       <window_info id="Structure" order="1" sideWeight="0.33543307" side_tool="true" weight="0.21010248" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32967034" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34150326" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26797387" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -331,23 +367,23 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.34564644" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66456693" visible="true" weight="0.20972222" />
       <window_info id="Structure" order="1" sideWeight="0.33543307" side_tool="true" weight="0.21010248" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32913387" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45683932" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36928105" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49926794" weight="0.35989377" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50073206" side_tool="true" weight="0.7511811" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49926794" weight="0.35989377" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.34564644" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -360,33 +396,38 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/main.cpp</url>
           <line>59</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/ml.cpp</url>
-          <line>215</line>
-          <option name="timeStamp" value="90" />
+          <line>244</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ml.cpp</url>
+          <line>236</line>
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
       <default-breakpoints>
-        <breakpoint enabled="true" type="CidrExceptionBreakpoint">
+        <breakpoint log-message="true" log-stack="true" type="CidrExceptionBreakpoint">
           <properties caught="ANY_EXCEPTION">
             <option name="whenCaught" value="ANY_EXCEPTION" />
           </properties>
         </breakpoint>
-        <breakpoint enabled="true" suspend="NONE" type="python-exception">
+        <breakpoint suspend="NONE" type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
             <option name="notifyOnTerminate" value="true" />
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="97" />
+      <option name="time" value="112" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -399,6 +440,7 @@
         <watch expression="root_tree-&gt;children[1]-&gt;children" />
         <watch expression="frequency_table" />
         <watch expression="x" />
+        <watch expression="data" />
       </configuration>
     </watches-manager>
   </component>
@@ -454,6 +496,21 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>pair.second.get()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>main_thread_id</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>std::this_thread::get_id()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>data-&gt;size()</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -483,152 +540,9 @@
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>static_cast&lt;double&gt;(7508) /  static_cast&lt;double&gt;(30162) *log2(0.24892248524633642)</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>log2(0.24892248524633642)</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>static_cast&lt;double&gt;(7508) /  static_cast&lt;double&gt;(30162)</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/InputParser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="26" />
-          <folding>
-            <element signature="e#38#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputParser.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="e#115#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ml.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding>
-            <element signature="e#97#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/rapidcsv.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18853">
-          <caret line="1109" column="28" selection-start-line="1109" selection-start-column="28" selection-end-line="1109" selection-end-column="28" />
-          <folding>
-            <element signature="e#1649#1666#0" expanded="true" />
-            <element signature="e#1808#1824#0" expanded="true" />
-            <element signature="e#1880#1897#0" expanded="true" />
-            <element signature="e#10626#10659#0" expanded="true" />
-            <element signature="e#23333#23358#0" expanded="true" />
-            <element signature="e#23496#23521#0" expanded="true" />
-            <element signature="e#24167#24201#0" expanded="true" />
-            <element signature="e#24357#24390#0" expanded="true" />
-            <element signature="e#25116#25150#0" expanded="true" />
-            <element signature="e#25396#25406#0" expanded="true" />
-            <element signature="e#25703#25725#0" expanded="true" />
-            <element signature="e#26980#26989#0" expanded="true" />
-            <element signature="e#27097#27106#0" expanded="true" />
-            <element signature="e#27251#27260#0" expanded="true" />
-            <element signature="e#27316#27325#0" expanded="true" />
-            <element signature="e#27424#27433#0" expanded="true" />
-            <element signature="e#27544#27553#0" expanded="true" />
-            <element signature="e#27695#27715#0" expanded="true" />
-            <element signature="e#28221#28260#0" expanded="true" />
-            <element signature="e#28991#29053#0" expanded="true" />
-            <element signature="e#30707#30730#0" expanded="true" />
-            <element signature="e#30979#31002#0" expanded="true" />
-            <element signature="e#31094#31117#0" expanded="true" />
-            <element signature="e#31209#31232#0" expanded="true" />
-            <element signature="e#31318#31350#0" expanded="true" />
-            <element signature="e#31823#31846#0" expanded="true" />
-            <element signature="e#31960#31983#0" expanded="true" />
-            <element signature="e#32098#32121#0" expanded="true" />
-            <element signature="e#32234#32257#0" expanded="true" />
-            <element signature="e#32371#32394#0" expanded="true" />
-            <element signature="e#32514#32546#0" expanded="true" />
-            <element signature="e#33221#33244#0" expanded="true" />
-            <element signature="e#33354#33377#0" expanded="true" />
-            <element signature="e#33488#33511#0" expanded="true" />
-            <element signature="e#33620#33643#0" expanded="true" />
-            <element signature="e#33753#33776#0" expanded="true" />
-            <element signature="e#33892#33901#0" expanded="true" />
-            <element signature="e#35311#35334#0" expanded="true" />
-            <element signature="e#35406#35429#0" expanded="true" />
-            <element signature="e#35502#35525#0" expanded="true" />
-            <element signature="e#35604#35636#0" expanded="true" />
-            <element signature="e#36164#36404#0" expanded="true" />
-            <element signature="e#36598#36617#0" expanded="true" />
-            <element signature="e#37016#37031#0" expanded="true" />
-            <element signature="e#37485#37504#0" expanded="true" />
-            <element signature="e#38382#38401#0" expanded="true" />
-            <element signature="e#39801#39828#0" expanded="true" />
-            <element signature="e#40391#40409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputParser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="14" />
-          <folding>
-            <element signature="e#38#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputParser.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#115#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ml.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -640,56 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16635">
           <caret line="1109" column="28" selection-start-line="1109" selection-start-column="28" selection-end-line="1109" selection-end-column="28" />
-          <folding>
-            <element signature="e#1649#1666#0" expanded="true" />
-            <element signature="e#1808#1824#0" expanded="true" />
-            <element signature="e#1880#1897#0" expanded="true" />
-            <element signature="e#10626#10659#0" expanded="true" />
-            <element signature="e#23333#23358#0" expanded="true" />
-            <element signature="e#23496#23521#0" expanded="true" />
-            <element signature="e#24167#24201#0" expanded="true" />
-            <element signature="e#24357#24390#0" expanded="true" />
-            <element signature="e#25116#25150#0" expanded="true" />
-            <element signature="e#25396#25406#0" expanded="true" />
-            <element signature="e#25703#25725#0" expanded="true" />
-            <element signature="e#26980#26989#0" expanded="true" />
-            <element signature="e#27097#27106#0" expanded="true" />
-            <element signature="e#27251#27260#0" expanded="true" />
-            <element signature="e#27316#27325#0" expanded="true" />
-            <element signature="e#27424#27433#0" expanded="true" />
-            <element signature="e#27544#27553#0" expanded="true" />
-            <element signature="e#27695#27715#0" expanded="true" />
-            <element signature="e#28221#28260#0" expanded="true" />
-            <element signature="e#28991#29053#0" expanded="true" />
-            <element signature="e#30707#30730#0" expanded="true" />
-            <element signature="e#30979#31002#0" expanded="true" />
-            <element signature="e#31094#31117#0" expanded="true" />
-            <element signature="e#31209#31232#0" expanded="true" />
-            <element signature="e#31318#31350#0" expanded="true" />
-            <element signature="e#31823#31846#0" expanded="true" />
-            <element signature="e#31960#31983#0" expanded="true" />
-            <element signature="e#32098#32121#0" expanded="true" />
-            <element signature="e#32234#32257#0" expanded="true" />
-            <element signature="e#32371#32394#0" expanded="true" />
-            <element signature="e#32514#32546#0" expanded="true" />
-            <element signature="e#33221#33244#0" expanded="true" />
-            <element signature="e#33354#33377#0" expanded="true" />
-            <element signature="e#33488#33511#0" expanded="true" />
-            <element signature="e#33620#33643#0" expanded="true" />
-            <element signature="e#33753#33776#0" expanded="true" />
-            <element signature="e#33892#33901#0" expanded="true" />
-            <element signature="e#35311#35334#0" expanded="true" />
-            <element signature="e#35406#35429#0" expanded="true" />
-            <element signature="e#35502#35525#0" expanded="true" />
-            <element signature="e#35604#35636#0" expanded="true" />
-            <element signature="e#36164#36404#0" expanded="true" />
-            <element signature="e#36598#36617#0" expanded="true" />
-            <element signature="e#37016#37031#0" expanded="true" />
-            <element signature="e#37485#37504#0" expanded="true" />
-            <element signature="e#38382#38401#0" expanded="true" />
-            <element signature="e#39801#39828#0" expanded="true" />
-            <element signature="e#40391#40409#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -698,7 +562,7 @@
         <state relative-caret-position="1215">
           <caret line="81" column="44" lean-forward="true" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
           <folding>
-            <element signature="e#1#20#0" expanded="true" />
+            <element signature="e#1911#2064#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -726,56 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="138" column="16" lean-forward="true" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="17" />
-          <folding>
-            <element signature="e#1649#1666#0" expanded="true" />
-            <element signature="e#1808#1824#0" expanded="true" />
-            <element signature="e#1880#1897#0" expanded="true" />
-            <element signature="e#10626#10659#0" expanded="true" />
-            <element signature="e#23333#23358#0" expanded="true" />
-            <element signature="e#23496#23521#0" expanded="true" />
-            <element signature="e#24167#24201#0" expanded="true" />
-            <element signature="e#24357#24390#0" expanded="true" />
-            <element signature="e#25116#25150#0" expanded="true" />
-            <element signature="e#25396#25406#0" expanded="true" />
-            <element signature="e#25703#25725#0" expanded="true" />
-            <element signature="e#26980#26989#0" expanded="true" />
-            <element signature="e#27097#27106#0" expanded="true" />
-            <element signature="e#27251#27260#0" expanded="true" />
-            <element signature="e#27316#27325#0" expanded="true" />
-            <element signature="e#27424#27433#0" expanded="true" />
-            <element signature="e#27544#27553#0" expanded="true" />
-            <element signature="e#27695#27715#0" expanded="true" />
-            <element signature="e#28221#28260#0" expanded="true" />
-            <element signature="e#28991#29053#0" expanded="true" />
-            <element signature="e#30707#30730#0" expanded="true" />
-            <element signature="e#30979#31002#0" expanded="true" />
-            <element signature="e#31094#31117#0" expanded="true" />
-            <element signature="e#31209#31232#0" expanded="true" />
-            <element signature="e#31318#31350#0" expanded="true" />
-            <element signature="e#31823#31846#0" expanded="true" />
-            <element signature="e#31960#31983#0" expanded="true" />
-            <element signature="e#32098#32121#0" expanded="true" />
-            <element signature="e#32234#32257#0" expanded="true" />
-            <element signature="e#32371#32394#0" expanded="true" />
-            <element signature="e#32514#32546#0" expanded="true" />
-            <element signature="e#33221#33244#0" expanded="true" />
-            <element signature="e#33354#33377#0" expanded="true" />
-            <element signature="e#33488#33511#0" expanded="true" />
-            <element signature="e#33620#33643#0" expanded="true" />
-            <element signature="e#33753#33776#0" expanded="true" />
-            <element signature="e#33892#33901#0" expanded="true" />
-            <element signature="e#35311#35334#0" expanded="true" />
-            <element signature="e#35406#35429#0" expanded="true" />
-            <element signature="e#35502#35525#0" expanded="true" />
-            <element signature="e#35604#35636#0" expanded="true" />
-            <element signature="e#36164#36404#0" expanded="true" />
-            <element signature="e#36598#36617#0" expanded="true" />
-            <element signature="e#37016#37031#0" expanded="true" />
-            <element signature="e#37485#37504#0" expanded="true" />
-            <element signature="e#38382#38401#0" expanded="true" />
-            <element signature="e#39801#39828#0" expanded="true" />
-            <element signature="e#40391#40409#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,9 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#2309#2335#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/functional">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="1390" selection-start-line="1390" selection-end-line="1390" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/bits/stl_function.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -934,7 +738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InputParser.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="289">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="19" />
           <folding>
             <element signature="e#115#132#0" expanded="true" />
@@ -944,7 +748,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ml.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="833">
           <caret line="49" column="109" selection-start-line="49" selection-start-column="109" selection-end-line="49" selection-end-column="109" />
           <folding>
             <element signature="e#97#115#0" expanded="true" />
@@ -952,19 +756,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/concurrent_set.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="748">
           <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
           <folding>
             <element signature="e#132#150#0" expanded="true" />
@@ -973,19 +767,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/functional">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="1716" selection-start-line="1716" selection-end-line="1716" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/future">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="1719" selection-start-line="1719" selection-end-line="1719" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../lib/gcc/x86_64-pc-cygwin/6.4.0/include/c++/thread">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        <state relative-caret-position="119">
+          <caret line="292" selection-start-line="292" selection-end-line="292" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="124" column="56" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
+          <folding>
+            <element signature="e#1911#2064#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ml.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="236" column="19" selection-start-line="236" selection-start-column="12" selection-end-line="236" selection-end-column="19" />
+        <state relative-caret-position="417">
+          <caret line="249" column="34" lean-forward="true" selection-start-line="249" selection-start-column="34" selection-end-line="249" selection-end-column="34" />
           <folding>
             <element signature="e#38#57#0" expanded="true" />
+            <element signature="e#5005#5106#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -120,10 +120,12 @@ int main(int argc, char **argv)
 #endif*/
 
         ml::DecisionTree decisionTree(input_parser.get_data(), input_parser.get_col_names());
-        ml::result_tree_t* result = decisionTree.create_decision_tree(args.out_attr_idx);
-
-        print_result(result);
-        free_result(result);
+        for (int x = 1; x < 100; x++) {
+        ml::result_tree_t *result = decisionTree.create_decision_tree(args.out_attr_idx);
+        std::cout << "fin de calculo de arbol " << endl;
+    }
+      //  print_result(result);
+     //   free_result(result);
 
     } catch (io::error::can_not_open_file& ex) {
         std::cerr << "error: no se puede abrir el fichero: " << args.csv_path << endl;

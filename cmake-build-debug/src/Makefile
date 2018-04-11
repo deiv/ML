@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/david.suarez/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/david.suarez/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deiv/dev/curro/MLPracticalTest
+CMAKE_SOURCE_DIR = /home/david.suarez/src/ML
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug
+CMAKE_BINARY_DIR = /home/david.suarez/src/ML/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/david.suarez/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/david.suarez/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug/CMakeFiles /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug/src/CMakeFiles/progress.marks
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug/CMakeFiles 0
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/david.suarez/src/ML/cmake-build-debug/CMakeFiles /home/david.suarez/src/ML/cmake-build-debug/src/CMakeFiles/progress.marks
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david.suarez/src/ML/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/MLPracticalTest.dir/rule:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/MLPracticalTest.dir/rule
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/MLPracticalTest.dir/rule
 .PHONY : src/CMakeFiles/MLPracticalTest.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ MLPracticalTest: src/CMakeFiles/MLPracticalTest.dir/rule
 
 # fast build rule for target.
 MLPracticalTest/fast:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/build
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/build
 .PHONY : MLPracticalTest/fast
 
 InputParser.o: InputParser.cpp.o
@@ -131,7 +131,7 @@ InputParser.o: InputParser.cpp.o
 
 # target to build an object file
 InputParser.cpp.o:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.o
 .PHONY : InputParser.cpp.o
 
 InputParser.i: InputParser.cpp.i
@@ -140,7 +140,7 @@ InputParser.i: InputParser.cpp.i
 
 # target to preprocess a source file
 InputParser.cpp.i:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.i
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.i
 .PHONY : InputParser.cpp.i
 
 InputParser.s: InputParser.cpp.s
@@ -149,7 +149,7 @@ InputParser.s: InputParser.cpp.s
 
 # target to generate assembly for a file
 InputParser.cpp.s:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.s
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/InputParser.cpp.s
 .PHONY : InputParser.cpp.s
 
 main.o: main.cpp.o
@@ -158,7 +158,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/main.cpp.o
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -167,7 +167,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/main.cpp.i
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -176,7 +176,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/main.cpp.s
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 ml.o: ml.cpp.o
@@ -185,7 +185,7 @@ ml.o: ml.cpp.o
 
 # target to build an object file
 ml.cpp.o:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/ml.cpp.o
 .PHONY : ml.cpp.o
 
 ml.i: ml.cpp.i
@@ -194,7 +194,7 @@ ml.i: ml.cpp.i
 
 # target to preprocess a source file
 ml.cpp.i:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/ml.cpp.i
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/ml.cpp.i
 .PHONY : ml.cpp.i
 
 ml.s: ml.cpp.s
@@ -203,7 +203,7 @@ ml.s: ml.cpp.s
 
 # target to generate assembly for a file
 ml.cpp.s:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/ml.cpp.s
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(MAKE) -f src/CMakeFiles/MLPracticalTest.dir/build.make src/CMakeFiles/MLPracticalTest.dir/ml.cpp.s
 .PHONY : ml.cpp.s
 
 # Help Target
@@ -213,8 +213,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... MLPracticalTest"
 	@echo "... edit_cache"
+	@echo "... MLPracticalTest"
 	@echo "... InputParser.o"
 	@echo "... InputParser.i"
 	@echo "... InputParser.s"
@@ -235,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/deiv/dev/curro/MLPracticalTest/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/david.suarez/src/ML/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
